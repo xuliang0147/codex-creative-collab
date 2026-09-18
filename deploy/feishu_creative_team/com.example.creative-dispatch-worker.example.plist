@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.example.creative-dispatch-worker</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/path/to/node</string>
+    <string>/path/to/codex-creative-collab/deploy/feishu_creative_team/creative-dispatch-worker.mjs</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/path/to/creative-team</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>CREATIVE_COLLAB_ROOT</key>
+    <string>/path/to/creative-team</string>
+    <key>CREATIVE_COLLAB_DISPATCH_QUEUE</key>
+    <string>/path/to/creative-team/00_协作账本/线程派发队列</string>
+    <key>CREATIVE_COLLAB_TEAM_RUNNER</key>
+    <string>/path/to/codex-creative-collab/deploy/feishu_creative_team/creative-collab-team-runner.py</string>
+    <key>CREATIVE_COLLAB_DB_PATH</key>
+    <string>/path/to/creative-team/00_协作账本/creative-collab.sqlite</string>
+    <key>CREATIVE_COLLAB_FEISHU_RELAY_CONFIG</key>
+    <string>/path/to/home/.codex/agent-collab/feishu-creative-relay.json</string>
+    <key>PATH</key>
+    <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>ThrottleInterval</key>
+  <integer>5</integer>
+  <key>StandardOutPath</key>
+  <string>/path/to/creative-team/00_协作账本/运行记录/线程派发服务.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/path/to/creative-team/00_协作账本/运行记录/线程派发服务.err.log</string>
+</dict>
+</plist>

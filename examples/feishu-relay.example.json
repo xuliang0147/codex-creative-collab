@@ -1,0 +1,8 @@
+{
+  "director_thread_id": "YOUR_FEISHU_DIRECTOR_THREAD_ID",
+  "director_host_id": "YOUR_VERIFIED_DIRECTOR_HOST_ID",
+  "chat_id": "YOUR_FEISHU_CHAT_ID",
+  "lark_profile": "creative",
+  "lark_channel_home": "~/.lark-channel",
+  "lark_cli_config_dir": "~/.lark-channel/profiles/creative/lark-cli"
+}

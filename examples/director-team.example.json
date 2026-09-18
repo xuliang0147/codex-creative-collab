@@ -1,0 +1,12 @@
+{
+  "request_id": "REGISTER-YOUR-TEAM-001",
+  "owner_thread_id": "YOUR_DIRECTOR_THREAD_ID",
+  "owner_host_id": "local",
+  "label": "产品A创意团队",
+  "bindings": {
+    "剪辑": {"thread_id": "YOUR_EDITOR_THREAD_ID", "host_id": "local"},
+    "拍摄": {"thread_id": "YOUR_SHOOTING_THREAD_ID", "host_id": "local"},
+    "平面": {"thread_id": "YOUR_GRAPHICS_THREAD_ID", "host_id": "local"},
+    "即梦": {"thread_id": "YOUR_DREAMINA_THREAD_ID", "host_id": "local"}
+  }
+}

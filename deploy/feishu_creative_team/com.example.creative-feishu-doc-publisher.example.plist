@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.example.creative-feishu-doc-publisher</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/path/to/node</string>
+    <string>/path/to/codex-creative-collab/deploy/feishu_creative_team/creative-feishu-doc-publisher-worker.mjs</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/path/to/creative-team</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>CREATIVE_COLLAB_ROOT</key>
+    <string>/path/to/creative-team</string>
+    <key>CREATIVE_COLLAB_FEISHU_DOC_QUEUE</key>
+    <string>/path/to/creative-team/00_协作账本/飞书文档发布队列</string>
+    <key>CREATIVE_COLLAB_FEISHU_CHAT_ID</key>
+    <string>YOUR_FEISHU_CHAT_ID</string>
+    <key>LARK_CHANNEL</key>
+    <string>1</string>
+    <key>LARK_CHANNEL_HOME</key>
+    <string>/path/to/home/.lark-channel</string>
+    <key>LARK_CHANNEL_PROFILE</key>
+    <string>creative</string>
+    <key>LARKSUITE_CLI_CONFIG_DIR</key>
+    <string>/path/to/home/.lark-channel/profiles/creative/lark-cli</string>
+    <key>PATH</key>
+    <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>ThrottleInterval</key>
+  <integer>5</integer>
+  <key>StandardOutPath</key>
+  <string>/path/to/creative-team/00_协作账本/运行记录/文档发布服务.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/path/to/creative-team/00_协作账本/运行记录/文档发布服务.err.log</string>
+</dict>
+</plist>
